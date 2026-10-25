@@ -720,7 +720,7 @@ loop_
 
             with MPRester() as mpr:
                 # No golden test data. Always test on fetched thermo data, plus Ni-S (a
-                # GGA(+U)-anchored mixed hull), as all sampled systems may be skipped
+                # GGA(+U)-anchored mixed hull)
                 chemsys_to_test: set[str] = {"Ni-S"} | {
                     doc.chemsys
                     for doc in mpr.materials.thermo.search(
